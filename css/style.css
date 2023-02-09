@@ -3,7 +3,6 @@ body {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
     line-height: 17px;
     color: #5D5D5D;
     text-align: left;
@@ -24,6 +23,7 @@ header {
     width: 1140px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 75px
@@ -107,6 +107,7 @@ h6 {
 
 .slider {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
@@ -120,13 +121,13 @@ h6 {
 }
 
 .slideimg {
-    flex: 1 1 0;
+    flex: 50%;
 }
 
 .slide-title {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
-    flex: 1 1 0;
+    flex: 50%;
 }
 
 /*Категории*/
@@ -190,6 +191,7 @@ div.full {
 
 .features {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -211,6 +213,7 @@ div.full {
 
 .list p {
     margin-bottom: 18px;
+    font-size: 14px;
 }
 
 .price {
@@ -286,5 +289,82 @@ button {
     h5 {
         font-size: 16px;
         line-height: 19px;
+    }
+
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        width: 100%;
+        height: 74px;
+        padding: 0 16px;
+    }
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .right-top {
+        gap: 25px;
+    }
+
+    .right-top img:nth-child(2),
+    .right-top img:last-child,
+    .slideimg {
+        display: none;
+    }
+
+    .slider {
+        height: 363px;
+    }
+
+    .slide-title {
+        flex: none;
+    }
+
+    div.full {
+        grid-column: none;
+    }
+
+    .categories {
+        grid-template-columns: none;
+        gap: 32px;
+    }
+
+    .cat-item {
+        height: 248px;
+    }
+
+    .full {
+        height: 111px;
+    }
+
+    h1 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    h5 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .list {
+        gap: 32px;
+        grid-template-columns: auto;
+        justify-items: center;
     }
 }
