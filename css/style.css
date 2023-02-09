@@ -112,6 +112,7 @@ h6 {
     justify-content: center;
     align-items: center;
     margin-bottom: 65px;
+    background: #F8F8F8;
 }
 
 .slider span {
@@ -232,4 +233,58 @@ button {
     color: #F26376;
     padding: 14px 38px;
     background-color: #fff;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        width: 100%;
+        height: 74px;
+        padding-left: 32px;
+        padding-right: 41px
+    }
+
+    .container {
+        width: 734px;
+    }
+
+    .right-top {
+        gap: 25px;
+    }
+
+    .right-top img:last-child {
+        margin-left: 17px;
+    }
+
+    .categories {
+        gap: 20px;
+    }
+
+    .cat-item {
+        height: 168px;
+    }
+
+    .full {
+        height: 116px;
+    }
+
+    h1 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    h5 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
