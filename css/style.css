@@ -203,7 +203,7 @@ div.full {
 .list {
     margin-top: 46px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 360px);
     gap: 30px;
 }
 
@@ -292,7 +292,7 @@ button {
     }
 
     .list {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
 }
 
@@ -325,13 +325,14 @@ button {
         flex: none;
     }
 
-    div.full {
-        grid-column: none;
+    .categories {
+
+        gap: 32px;
+        grid-template-columns: repeat(auto-fit, 360px);
     }
 
-    .categories {
-        grid-template-columns: none;
-        gap: 32px;
+    div.full {
+        grid-column: span none;
     }
 
     .cat-item {
@@ -363,8 +364,6 @@ button {
     }
 
     .list {
-        gap: 32px;
-        grid-template-columns: auto;
-        justify-items: center;
+        gap: 16px;
     }
 }
