@@ -327,7 +327,7 @@ button {
     .categories {
 
         gap: 32px;
-        grid-template-columns: repeat(auto-fit, 360px);
+        grid-template-columns: repeat(auto-fit, 343px);
     }
 
     div.full {
