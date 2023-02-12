@@ -221,7 +221,7 @@ div.full {
 
 button {
     display: block;
-    margin: 49px auto 60px auto;
+    margin: 49px auto 96px auto;
     border: 1px solid #FF6A6A;
     font-weight: 400;
     font-size: 16px;
@@ -231,6 +231,172 @@ button {
     background-color: #fff;
 }
 
+.top-footer,
+.copiright {
+    background-color: #222224;
+}
+
+/*footer*/
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: #FBFBFB;
+    font-size: 14px;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 104px 0 103px 0;
+}
+
+footer h3 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 12px;
+}
+
+.footer-item p {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.mail-footer {
+    background-image: url(../img/footer-background.png);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 448px;
+}
+
+.mail-footer .bright {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(244, 244, 244, 0.7);
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mail-footer h4 {
+    font-size: 24px;
+    line-height: 40px;
+    color: #222224;
+    font-weight: 700;
+}
+
+.mail-footer h5 {
+    font-size: 18px;
+    line-height: 30px;
+    color: #222224;
+    background-position: bottom;
+}
+
+.feedback {
+    width: 360px;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+}
+
+.subscribe {
+    width: 557px;
+}
+
+.feedback,
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.feedback img {
+    margin-bottom: 30px;
+}
+
+.feedback p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    color: #222224;
+    font-weight: 400;
+}
+
+input[type="email"] {
+    line-height: 17px;
+    text-align: left;
+    font-size: 14px;
+    background-color: #E1E1E1;
+    width: 256px;
+    height: 49px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 7px 64px 6px 22px;
+    color: #222224;
+}
+
+input[type="button"] {
+    background-color: #F16D7F;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 0 20px 20px 0;
+    padding: 7px 7px 6px 8px;
+    width: 100px;
+    height: 49px;
+    margin-left: -3px;
+}
+
+form {
+    margin-top: 32px;
+}
+
+.copiright .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+}
+
+.social-icon img {
+    display: block;
+    margin: 10px auto;
+}
+
+.footer-left {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FBFBFB;
+    margin: 30px 0;
+}
+
+.footer.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
@@ -289,6 +455,34 @@ button {
         gap: 16px;
     }
 
+    .footer-item {
+        margin: 48px 0 48px 0;
+    }
+
+    .main-footer {
+        flex-direction: column;
+    }
+
+    .mail-footer {
+        background-image: url(../img/footer-background.png);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-position: bottom;
+        height: 693px;
+    }
+
+    .mail-footer .bright {
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 48px;
+        align-content: stretch;
+        flex-wrap: wrap;
+    }
+
+    .subscribe {
+        padding-bottom: 92px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -359,5 +553,40 @@ button {
 
     .list {
         gap: 16px;
+    }
+
+    .footer-item {
+        width: 348px;
+        gap: 16px;
+        margin: 15px 0 15px;
+    }
+
+    .main-footer {
+        padding: 32px 0 66px;
+    }
+
+    .mail-footer .bright {
+        flex-direction: column;
+        padding: 54px 0 104px;
+    }
+
+    .mail-footer {
+        height: 550px;
+    }
+
+    .mail-footer {
+        background-position-y: 0;
+        background-position-x: -400px;
+        background-size: cover;
+    }
+
+    .copiright .container {
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    section.copiright {
+        height: 143px;
+        padding-top: 43px;
     }
 }
