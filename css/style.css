@@ -472,6 +472,7 @@ button:hover {
 
 .header__checkbox:checked~.mobile-menu {
     right: 0;
+    display: block;
 }
 
 .mobile-menu {
@@ -488,6 +489,7 @@ button:hover {
     padding: 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: none;
 }
 
 .mobile-menu__link-site {
@@ -743,7 +745,7 @@ button:hover {
         align-content: center;
     }
 
-    section.copiright {
+    div.copiright {
         height: 143px;
         padding-top: 43px;
     }
