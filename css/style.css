@@ -740,6 +740,10 @@ button:hover {
         background-size: cover;
     }
 
+    .subscribe {
+        width: auto;
+    }
+
     .copiright .container {
         flex-direction: column-reverse;
         align-content: center;
